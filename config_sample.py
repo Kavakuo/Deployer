@@ -7,5 +7,6 @@ CONFIG = {
     },
     "mailLogger": logging.handlers.SMTPHandler(),
     "deployPath": "/home/kavakuo/GitProjects/",
-    "gitBaseUrl": "git@github.com:Kavakuo/"
+    "gitBaseUrl": "git@github.com:Kavakuo/",
+    "hmacSecret": b"secret"
 }

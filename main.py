@@ -99,7 +99,7 @@ def addOutput(identifier, msg, err):
 
 
 def downloadFromGit(repoName, force=False, branch="master", tag=None):
-    LOGGER.debug("starting git operations...")
+    LOGGER.debug("starting git operations for "+branch+"@"+ repoName +"...")
 
     error = False
     if branch == "master":
@@ -228,14 +228,20 @@ def github():
 
 
     # calculate HMAC
-    data = request.get_data(as_text=False) if not DEBUG else rawData
-    secret = b"topSecret"
-    mac = hmac.new(secret, data, hashlib.sha1).hexdigest()
 
-    if mac != headers["X-Hub-Signature"] and not DEBUG:
-        LOGGER.critical("Invalid GitHub signature, automatic deploy failed!")
-        return requestError("Invalid Signature 401", 401)
+    if CONFIG["hmacSecret"]:
+        data = request.get_data(as_text=False) if not DEBUG else rawData
+        secret = CONFIG["hmacSecret"]
+        mac = hmac.new(secret, data, hashlib.sha1).hexdigest()
 
+        if "sha1=" + mac != headers["X-Hub-Signature"]:
+            LOGGER.critical("Invalid GitHub signature, automatic deploy failed!")
+            LOGGER.debug("Computed Mac: sha1=" + mac + "\n" +
+                         "Sent Mac    : " + headers["X-Hub-Signature"])
+            LOGGER.debug("type(data) = " + str(type(data)) + "\nPayload:\n" + data.decode())
+            return requestError("Invalid Signature 401", 401)
+    else:
+        LOGGER.warning("Skip signature validation!")
 
     # setup git operation
     repoName = jsonData["repository"]["name"]
