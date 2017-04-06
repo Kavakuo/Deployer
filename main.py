@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 
 from flask import Flask, request, Response
-import hmac, hashlib, subprocess, os, sys, shutil
+import hmac, hashlib, subprocess, os, sys, shutil,json
 import logger
 from copy import copy
 
@@ -207,21 +207,32 @@ def github():
     headers = request.headers
     jsonData = request.get_json(silent=True)
 
+    if DEBUG:
+        headers = {
+            "User-Agent": "GitHub-Hookshot/a837270",
+            "X-GitHub-Delivery": "0aa67100-1b16-11e7-8bbf-ee052e733e39",
+            "X-GitHub-Event": "push",
+            "X-Hub-Signature": "sha1=c6498e16d2fa649cb8d92bea4c2a7f1dabfb7643"
+        }
+        rawData = open("/Users/Philipp/Desktop/Scripts/Deployer/payload_github_push.json", "rb").read()
+        jsonData = json.loads(rawData.decode())
+
+
     if not jsonData:
         LOGGER.warning("No json data in request!")
         return requestError()
 
-    if "X-Github-Delivery" not in headers or "X-GitHub-Event" not in headers or "X-Hub-Signature" not in headers or "GitHub-Hookshot" not in headers["User-Agent"]:
+    if "X-GitHub-Delivery" not in headers or "X-GitHub-Event" not in headers or "X-Hub-Signature" not in headers or "GitHub-Hookshot" not in headers["User-Agent"]:
         LOGGER.warning("Unsupported Header combinaion:\n" + str(headers))
         return requestError()
 
 
     # calculate HMAC
-    data = request.get_data(as_text=False)
+    data = request.get_data(as_text=False) if not DEBUG else rawData
     secret = b"topSecret"
     mac = hmac.new(secret, data, hashlib.sha1).hexdigest()
 
-    if mac != headers["X-Hub-Signature"]:
+    if mac != headers["X-Hub-Signature"] and not DEBUG:
         LOGGER.critical("Invalid GitHub signature, automatic deploy failed!")
         return requestError("Invalid Signature 401", 401)
 
@@ -230,7 +241,7 @@ def github():
     repoName = jsonData["repository"]["name"]
 
     if headers["X-GitHub-Event"] == "push":
-        branch = jsonData["ref"].replace("refs/heads/")
+        branch = jsonData["ref"].replace("refs/heads/", "")
 
         # run operation
         resp = downloadFromGit(repoName, branch=str(branch))
