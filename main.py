@@ -302,6 +302,10 @@ def info():
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
+    cmd = "env"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
+
     return Response(output, content_type=contenttype)
 
 
