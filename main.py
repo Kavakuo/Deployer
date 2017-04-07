@@ -267,6 +267,10 @@ def github():
     repoName = jsonData["repository"]["name"]
 
     if headers["X-GitHub-Event"] == "push":
+        if "refs/heads" not in jsonData["ref"]:
+            LOGGER.debug("No branch push detected, ignore push event")
+            return Response("No branch push detected, ignore push event", content_type=contenttype)
+
         branch = jsonData["ref"].replace("refs/heads/", "")
 
         # run operation
@@ -305,6 +309,7 @@ def deploy(repoName, branch="master", tag=None):
 
 @app.route('/info', methods=["GET"])
 def info():
+
     output = ""
     cmd = "which git"
     gitOut, gitError = call(cmd, shell=True)
@@ -326,50 +331,14 @@ def info():
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
-    cmd = "env"
-    gitOut, gitError = call(cmd, shell=True, env=os.environ.copy())
-    output += addOutput("[+] with explicit env " + cmd, gitOut, gitError)
+    cmd = "which python"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
 
+    cmd = "which python3"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
 
-
-    output += "with shell = False:\n"
-    try:
-        LOGGER.debug("shell=False")
-
-        cmd = ["git", "config", "--global", "-l"]
-        gitOut, gitError = call(cmd, shell=False)
-        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("config succeed")
-
-        cmd = ["git", "--version"]
-        gitOut, gitError = call(cmd, shell=False)
-        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("version succeed")
-
-        cmd = ["env"]
-        gitOut, gitError = call(cmd, shell=False)
-        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("env succeed")
-
-        cmd = ["env"]
-        gitOut, gitError = call(cmd, shell=False, env=os.environ.copy())
-        output += addOutput("[+] with explicit env " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("env succeed")
-
-        cmd = ["which", "git"]
-        gitOut, gitError = call(cmd, shell=False)
-        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("which succeed")
-
-        cmd = ["whoami"]
-        gitOut, gitError = call(cmd, shell=False)
-        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("whoami succeed")
-
-        output += "os.environ:\n" + str(os.environ.copy())
-    except Exception as e:
-        output += str(type(e))
-        pass
 
     return Response(output, content_type=contenttype)
 

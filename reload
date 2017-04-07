@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+branch=$1;
+host=$2;
+directory=$PWD;
+parentFolder=$(basename ${PWD})
+
+killall ${parentFolder}
+echo ${parentFolder}
