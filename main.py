@@ -57,7 +57,7 @@ app = Flask(__name__)
 app.logger.addHandler(logger.configureHandler(logger.WatchedFileHandler(flaskLogPath), logger.PNLogFormatter()))
 app.logger.setLevel(logger.logging.DEBUG)
 
-
+contenttype = "text/plain; charset=utf-8"
 
 if not os.path.exists(GITPATH):
     try:
@@ -67,7 +67,7 @@ if not os.path.exists(GITPATH):
 
 
 def requestError(message="Error 400", code=400):
-    return Response(message, status=code, content_type="text/plain; charset=utf-8")
+    return Response(message, status=code, content_type=contenttype)
 
 def call(args, **kwargs):
     error = False
@@ -199,7 +199,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
         return requestError(output, code=500)
 
     else:
-        return Response(output + "\n\nOverall success!", content_type="text/plain; charset=utf-8")
+        return Response(output + "\n\nOverall success!", content_type=)
 
 
 @app.route('/github', methods=["GET", "POST"])
@@ -293,6 +293,8 @@ def info():
     cmd = "whoami"
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
+
+    return Response(output, content_type=contenttype)
 
 if __name__ == '__main__':
     app.run(debug=DEBUG)
