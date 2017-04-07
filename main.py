@@ -290,7 +290,15 @@ def info():
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
+    cmd = "git --version"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
+
     cmd = "whoami"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
+
+    cmd = "git config --global -l"
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
