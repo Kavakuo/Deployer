@@ -2,7 +2,7 @@
 
 from flask import Flask, request, Response
 import hmac, hashlib, subprocess, os, sys, shutil,json
-import logger
+import logger, re
 from copy import copy
 
 try:
@@ -69,6 +69,10 @@ if not os.path.exists(GITPATH):
 def requestError(message="Error 400", code=400):
     return Response(message, status=code, content_type=contenttype)
 
+
+
+
+
 def call(args, **kwargs):
     error = False
     try:
@@ -85,7 +89,13 @@ def call(args, **kwargs):
     return output, error
 
 
+
+
+
 def addOutput(identifier, msg, err):
+    if msg.strip() == '' and not err:
+        return ''
+
     ret = identifier
     if err:
         ret = ret.replace("[+]", "[-]")
@@ -94,8 +104,12 @@ def addOutput(identifier, msg, err):
         ret += ":\n"
     ret += msg.strip()
     ret = ret.replace("\n", "\n    ")
-    ret += "\n\n"
+    ret += "\n" if msg.strip() == '' else "\n\n"
+
     return ret
+
+
+
 
 
 def downloadFromGit(repoName, force=False, branch="master", tag=None):
@@ -112,50 +126,78 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
 
     # evaluate CONFIG
     stop = False
+    releaseOnly = False
+
     if CONFIG and CONFIG.get(repoName):
-        whitelist = CONFIG[repoName].get("whitelistedBranches")
-        blacklist = CONFIG[repoName].get("blacklistedBranches")
-        if whitelist and branch not in whitelist:
+        repoConfig = CONFIG[repoName]
+
+        # white/blacklists
+        whitelist = repoConfig.get("whitelistedBranches")
+        blacklist = repoConfig.get("blacklistedBranches")
+        if whitelist and len(list(filter(lambda x: re.compile(x).match(branch), whitelist))) > 0:
             stop = True
-        if blacklist and branch in blacklist:
+        if blacklist and len(list(filter(lambda x: re.compile(x).match(branch), blacklist))) > 0:
             stop = True
+
+        # releasesOnly
+        if repoConfig.get("releasesOnly"):
+            releasesOnlyConfig = repoConfig["releasesOnly"]
+            if type(releasesOnlyConfig) == bool:
+                releaseOnly = releasesOnlyConfig
+            elif type(releasesOnlyConfig) == dict and branch in releasesOnlyConfig:
+                releaseOnly = releasesOnlyConfig[branch]
 
     # react on config file
-    if stop:
+    if stop or os.path.exists(repoPath + "disabled") or os.path.exists(repoPath + "disabled-" + branch):
         if not force:
-            return Response("Auto deployment for Branch '"+ branch +"' in config disabled, add query param \"force=1\" to overwrite this.", content_type=contenttype)
+            if stop:
+                return Response("Auto deployment for branch ('"+ branch +"') in config disabled, add query param 'force=1' to deploy anyway.", content_type=contenttype)
+            else:
+                return Response("Auto deployment for branch ('" + branch + "') per file disabled, add query param 'force=1' to deploy anyway.", content_type=contenttype)
         else:
-            output += "[!] Auto deployment for "+ branch +" in config disabled, ignoring this.\n\n"
+            if stop:
+                output += "[!] Auto deployment for branch ('"+ branch +"') in config disabled, ignoring this and deploy anyway...\n\n"
+            else:
+                output += "[!] Auto deployment for branch ('" + branch + "') per file disabled, ignoring this and deploy anyway...\n\n"
 
+
+    ignoreReleaseFlag = request.args.get("ignoreRelease")
+    ignoreReleaseFlag = True if ignoreReleaseFlag and ignoreReleaseFlag != "0" else False
+
+    # current event is no release
+    if releaseOnly and not tag:
+        if not ignoreReleaseFlag:
+            return Response("This branch '"+branch+"' should only autodeploy releases!\n" +
+                            "Add query param 'ignoreRelease=1' to deploy anyway.", content_type=contenttype)
+        else:
+            output += "[!] Auto deployment for branch ('"+ branch +"') only enabled for releases. Ignoring this and deploy anyway...\n\n"
+
+
+
+    # current event is release, check if it is the newest
+    # check for this case after pull/clone!
 
 
     firstSetup = False
-
     # deploy
     if not os.path.exists(repoPath):
         # clone git repo
         try:
-            os.makedirs(repoPath)
+            os.makedirs(repoPath, exist_ok=True)
         except:
             pass
 
-        gitOut, gitError = call(["git", "clone", "-b", branch, GITBASEURL + repoName + ".git", "."], cwd=repoPath)
-        output += addOutput("[+] git clone -b " + branch + GITBASEURL + repoName + ".git .", gitOut, gitError)
+        args = ["git", "clone", "-b", branch, GITBASEURL + repoName + ".git", "."]
+        gitOut, gitError = call(args, cwd=repoPath)
+        output += addOutput("[+] " + " ".join(args), gitOut, gitError)
         error |= gitError
 
         if gitError:
             shutil.rmtree(repoPath, True)
 
-
         firstSetup = True
     else:
         # pull from repo
-        if os.path.exists(repoPath + "disabled") or os.path.exists(repoPath + "disabled-" + branch):
-            if not force:
-                return Response("Auto deployment disabled, add query param \"force=1\" to overwrite this.",content_type=contenttype)
-            else:
-                output = "(Auto deployment disabled)\n"
-
         cmd = ["git", "clean", "-d", "-f"]
         gitOut, gitError = call(cmd, cwd=repoPath)
         output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
@@ -181,6 +223,51 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
         output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
         error |= gitError
 
+
+
+    # check for newest release
+    if tag:
+        # get all tags
+        gitOut, gitError = call(["git", "tag", "--sort=-committerdate"], cwd=repoPath)
+
+        if gitError:
+            output += addOutput("[+] git tag --sort=-committerdate", gitOut, gitError)
+            error |= gitError
+
+        gitOut = gitOut.strip()
+        releases = gitOut.splitlines()
+        releasesAnnotated = list(map(lambda x: x.strip(), releases[:]))
+
+        if tag == "latest":
+            if len(releases) > 0:
+                tag = releases[0]
+                output += "[+] switch to latest release ('" + tag +"') on ('"+branch+"')\n\n"
+            else:
+                output = "ATTENTION!\nNo release available, switch to latest push.\n\n\n===========================\n" + output
+                tag = None
+
+        # tag exists
+        if tag in releases:
+            releaseNumber = releases.index(tag)
+            releasesAnnotated[releaseNumber] = "%s <= specified release" % releasesAnnotated[releaseNumber]
+
+            if releaseNumber > 0 and not ignoreReleaseFlag:
+                # not the newest release
+                temp = "ATTENTION!\n"
+                temp += ("Specified release ('%s') is not the newest on this branch. Will set release to the newest one ('%s').\n" +
+                           "If you want to checkout your release anyway, add query param 'ignoreRelease=1' to URL.\n") % (tag, releases[0])
+                temp += ("History of releases (newest top, oldest bottom):\n" +
+                         "%s\n\n") % '\n'.join(map(lambda x: "  %s" % x, releasesAnnotated))
+                temp += "If you want to silence this warning, specify the latest release or set the release name to 'latest'\n"+\
+                        "to always deploy the latest release.\n\n\n"
+
+                output = temp + "===========================\n" + output
+
+                tag = releases[0]
+            elif ignoreReleaseFlag:
+                # ignore newest release
+                output += ("[!] Specified release ('%s') is not the newest on this branch.\n" +
+                           "    Ignoring this and checkout this release anyway.\n\n") % releases[0]
 
     # checkout tag
     if tag and os.path.exists(repoPath):
@@ -215,11 +302,15 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
 
     # webserver response
     if error:
-        output = "Automatic deploy failed!\n------------------------\n" + output
+        output = "Automatic deploy failed!\n========================\n".upper() + output
         return requestError(output, code=500)
 
     else:
         return Response(output + "\n\nOverall success!", content_type=contenttype)
+
+
+
+
 
 
 @app.route('/github', methods=["GET", "POST"])
@@ -228,6 +319,7 @@ def github():
     jsonData = request.get_json(silent=True)
 
     if DEBUG:
+        # check local HMAC calculation
         headers = {
             "User-Agent": "GitHub-Hookshot/a837270",
             "X-GitHub-Delivery": "0aa67100-1b16-11e7-8bbf-ee052e733e39",
@@ -236,54 +328,62 @@ def github():
         }
         rawData = open("/Users/Philipp/Desktop/Scripts/Deployer/payload_github_push.json", "rb").read()
         jsonData = json.loads(rawData.decode())
-
+    else:
+        rawData = request.get_data(as_text=False)
 
     if not jsonData:
         LOGGER.warning("No json data in request!")
         return requestError()
 
     if "X-GitHub-Delivery" not in headers or "X-GitHub-Event" not in headers or "X-Hub-Signature" not in headers or "GitHub-Hookshot" not in headers["User-Agent"]:
-        LOGGER.warning("Unsupported Header combinaion:\n" + str(headers))
+        LOGGER.warning("Unsupported Header combination:\n" + "\n".join(map(lambda x: "    \"%s\": \"%s\"" %(x[0], x[1]), headers.items())))
         return requestError()
 
 
     # calculate HMAC
-
     if CONFIG["hmacSecret"]:
-        data = request.get_data(as_text=False) if not DEBUG else rawData
         secret = CONFIG["hmacSecret"]
-        mac = hmac.new(secret, data, hashlib.sha1).hexdigest()
+        mac = hmac.new(secret, rawData, hashlib.sha1).hexdigest()
 
         if "sha1=" + mac != headers["X-Hub-Signature"]:
             LOGGER.critical("Invalid GitHub signature, automatic deploy failed!")
             LOGGER.debug("Computed Mac: sha1=" + mac + "\n" +
                          "Sent Mac    : " + headers["X-Hub-Signature"])
-            LOGGER.debug("type(data) = " + str(type(data)) + "\nPayload:\n" + data.decode())
+            LOGGER.debug("type(data) = " + str(type(rawData)) + "\nPayload:\n" + rawData.decode())
             return requestError("Invalid Signature 401", 401)
     else:
         LOGGER.warning("Skip signature validation!")
 
+
     # setup git operation
     repoName = jsonData["repository"]["name"]
+    tag = None
 
     if headers["X-GitHub-Event"] == "push":
         if "refs/heads" not in jsonData["ref"]:
-            LOGGER.debug("No branch push detected, ignore push event")
+            LOGGER.debug("No branch push detected, ignore push event.")
             return Response("No branch push detected, ignore push event", content_type=contenttype)
 
         branch = jsonData["ref"].replace("refs/heads/", "")
 
-        # run operation
-        resp = downloadFromGit(repoName, branch=str(branch))
-        if resp.status_code >= 400:
-            LOGGER.critical(resp.get_data(as_text=True).strip())
-        else:
-            LOGGER.debug(resp.get_data(as_text=True).strip())
-        return resp
+    elif headers["X-GitHub-Event"] == "release":
+        branch = jsonData["release"]["target_commitish"]
+        tag = jsonData["release"]["tag_name"]
 
     else:
         LOGGER.critical("Received an unsupported GitHub Event: "  + headers["X-GitHub-Event"])
-        return requestError("Unsupported Github Event", code=405)
+        return requestError("Received an unsupported GitHub Event", code=405)
+
+
+    # run operation
+    resp = downloadFromGit(repoName, branch=str(branch), tag=tag)
+    if resp.status_code >= 400:
+        LOGGER.critical(resp.get_data(as_text=True).strip())
+    else:
+        LOGGER.debug(resp.get_data(as_text=True).strip())
+    return resp
+
+
 
 
 
@@ -294,11 +394,9 @@ def deploy(repoName, branch="master", tag=None):
     if request.method == "GET":
         return Response('<form method="POST"><input id="button" type="submit" value="Start"></form><script>document.getElementById("button").focus();</script>')
 
-    force = request.args.get("force")
-    if force:
-        force = bool(int(force))
+    force = True if request.args.get("force") and request.args.get("force") != "0" else False
 
-    resp = downloadFromGit(repoName, force=force, branch=str(branch), tag=tag)
+    resp = downloadFromGit(repoName, force=force, branch=branch, tag=tag)
     if resp.status_code >= 400:
         LOGGER.warning(resp.get_data(as_text=True).strip())
     else:
@@ -307,10 +405,14 @@ def deploy(repoName, branch="master", tag=None):
     return resp
 
 
+
+
+
+
 @app.route('/info', methods=["GET"])
 def info():
-
     output = ""
+
     cmd = "which git"
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
@@ -339,6 +441,7 @@ def info():
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
+    output += "[+] current sys.path:\n    " + "\n".join(sys.path)
 
     return Response(output, content_type=contenttype)
 

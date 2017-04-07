@@ -5,5 +5,5 @@ host=$2;
 directory=$PWD;
 parentFolder=$(basename ${PWD})
 
-killall ${parentFolder}
-echo ${parentFolder}
+echo "killall ${parentFolder}.fcgi"
+killall ${parentFolder}.fcgi
