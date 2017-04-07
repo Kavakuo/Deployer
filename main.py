@@ -123,7 +123,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
     # react on config file
     if stop:
         if not force:
-            return Response("Auto deployment for Branch '"+ branch +"' in config disabled, add query param \"force=1\" to overwrite this.", content_type="text/plain")
+            return Response("Auto deployment for Branch '"+ branch +"' in config disabled, add query param \"force=1\" to overwrite this.", content_type=contenttype)
         else:
             output += "[!] Auto deployment for "+ branch +" in config disabled, ignoring this.\n\n"
 
@@ -152,7 +152,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
         # pull from repo
         if os.path.exists(repoPath + "disabled") or os.path.exists(repoPath + "disabled-" + branch):
             if not force:
-                return Response("Auto deployment disabled, add query param \"force=1\" to overwrite this.",content_type="text/plain")
+                return Response("Auto deployment disabled, add query param \"force=1\" to overwrite this.",content_type=contenttype)
             else:
                 output = "(Auto deployment disabled)\n"
 
@@ -199,7 +199,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
         return requestError(output, code=500)
 
     else:
-        return Response(output + "\n\nOverall success!", content_type=)
+        return Response(output + "\n\nOverall success!", content_type=contenttype)
 
 
 @app.route('/github', methods=["GET", "POST"])
@@ -295,6 +295,7 @@ def info():
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
     return Response(output, content_type=contenttype)
+
 
 if __name__ == '__main__':
     app.run(debug=DEBUG)
