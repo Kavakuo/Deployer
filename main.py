@@ -156,9 +156,29 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
             else:
                 output = "(Auto deployment disabled)\n"
 
-        cmd = "git clean -d -f && git reset --hard && git checkout "+ branch +" && git pull"
-        gitOut, gitError = call(cmd, cwd=repoPath, shell=True)
-        output += addOutput("[+] " + cmd, gitOut, gitError)
+        cmd = ["git", "clean", "-d", "-f"]
+        gitOut, gitError = call(cmd, cwd=repoPath)
+        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+        error |= gitError
+
+        cmd = ["git", "reset", "--hard"]
+        gitOut, gitError = call(cmd, cwd=repoPath)
+        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+        error |= gitError
+
+        cmd = ["git", "checkout", branch]
+        gitOut, gitError = call(cmd, cwd=repoPath)
+        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+        error |= gitError
+
+        cmd = ["git", "fetch"]
+        gitOut, gitError = call(cmd, cwd=repoPath)
+        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+        error |= gitError
+
+        cmd = ["git", "reset", "--hard", "origin/" + branch]
+        gitOut, gitError = call(cmd, cwd=repoPath)
+        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
         error |= gitError
 
 
