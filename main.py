@@ -315,26 +315,16 @@ def info():
     output += "with shell = False:\n"
     try:
         LOGGER.debug("shell=False")
-        cmd = ["/usr/bin/which git"]
+
+        cmd = ["git", "config", "--global", "-l"]
         gitOut, gitError = call(cmd, shell=False)
         output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("which succeed")
+        LOGGER.debug("config succeed")
 
         cmd = ["git", "--version"]
         gitOut, gitError = call(cmd, shell=False)
         output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
         LOGGER.debug("version succeed")
-
-        cmd = ["whoami"]
-        gitOut, gitError = call(cmd, shell=False)
-        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("whoami succeed")
-
-        cmd = ["git config", "--global", "-l"]
-        gitOut, gitError = call(cmd, shell=False)
-        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
-        LOGGER.debug("config succeed")
-
 
         cmd = ["env"]
         gitOut, gitError = call(cmd, shell=False)
@@ -346,8 +336,19 @@ def info():
         output += addOutput("[+] with explicit env " + ' '.join(cmd), gitOut, gitError)
         LOGGER.debug("env succeed")
 
+        cmd = ["which", "git"]
+        gitOut, gitError = call(cmd, shell=False)
+        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+        LOGGER.debug("which succeed")
+
+        cmd = ["whoami"]
+        gitOut, gitError = call(cmd, shell=False)
+        output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+        LOGGER.debug("whoami succeed")
+
         output += "os.environ:\n" + str(os.environ.copy())
-    except:
+    except Exception as e:
+        output += str(type(e))
         pass
 
     return Response(output, content_type=contenttype)
