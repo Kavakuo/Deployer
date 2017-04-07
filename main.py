@@ -156,7 +156,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
             else:
                 output = "(Auto deployment disabled)\n"
 
-        cmd = "git clean -d -f && git reset --hard && git checkout "+ branch +" && git pull --rebase"
+        cmd = "git clean -d -f && git reset --hard && git checkout "+ branch +" && git pull"
         gitOut, gitError = call(cmd, cwd=repoPath, shell=True)
         output += addOutput("[+] " + cmd, gitOut, gitError)
         error |= gitError
@@ -309,6 +309,34 @@ def info():
     cmd = "env"
     gitOut, gitError = call(cmd, shell=True, env=os.environ.copy())
     output += addOutput("[+] with explicit env " + cmd, gitOut, gitError)
+
+
+
+    output += "with shell = False:\n"
+    cmd = ["which git"]
+    gitOut, gitError = call(cmd, shell=False)
+    output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+
+    cmd = ["git", "--version"]
+    gitOut, gitError = call(cmd, shell=False)
+    output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+
+    cmd = ["whoami"]
+    gitOut, gitError = call(cmd, shell=False)
+    output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+
+    cmd = ["git config", "--global", "-l"]
+    gitOut, gitError = call(cmd, shell=False)
+    output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+
+    cmd = ["env"]
+    gitOut, gitError = call(cmd, shell=False)
+    output += addOutput("[+] " + ' '.join(cmd), gitOut, gitError)
+
+    cmd = ["env"]
+    gitOut, gitError = call(cmd, shell=False, env=os.environ.copy())
+    output += addOutput("[+] with explicit env " + ' '.join(cmd), gitOut, gitError)
+
 
     output += "os.environ:\n" + str(os.environ.copy())
 
