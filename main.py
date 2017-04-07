@@ -310,7 +310,7 @@ def info():
     gitOut, gitError = call(cmd, shell=True, env=os.environ.copy())
     output += addOutput("[+] with explicit env " + cmd, gitOut, gitError)
 
-    output += "os.environ:\n" + os.environ.copy()
+    output += "os.environ:\n" + str(os.environ.copy())
 
     return Response(output, content_type=contenttype)
 
