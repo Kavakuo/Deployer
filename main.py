@@ -283,5 +283,16 @@ def deploy(repoName, branch="master", tag=None):
     return resp
 
 
+@app.route('/info', methods=["GET"])
+def info():
+    output = ""
+    cmd = "which git"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
+
+    cmd = "whoami"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
+
 if __name__ == '__main__':
     app.run(debug=DEBUG)
