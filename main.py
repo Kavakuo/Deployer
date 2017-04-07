@@ -112,7 +112,7 @@ def addOutput(identifier, msg, err):
 
 
 
-def downloadFromGit(repoName, force=False, branch="master", tag=None):
+def downloadFromGit(repoName, force=False, branch="master", tag=None, webhook=True):
     LOGGER.debug("starting git operations for "+branch+"@"+ repoName +"...")
 
     error = False
@@ -134,7 +134,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
         # white/blacklists
         whitelist = repoConfig.get("whitelistedBranches")
         blacklist = repoConfig.get("blacklistedBranches")
-        if whitelist and len(list(filter(lambda x: re.compile(x).match(branch), whitelist))) > 0:
+        if whitelist and len(list(filter(lambda x: re.compile(x).match(branch), whitelist))) == 0:
             stop = True
         if blacklist and len(list(filter(lambda x: re.compile(x).match(branch), blacklist))) > 0:
             stop = True
@@ -251,8 +251,8 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
             releaseNumber = releases.index(tag)
             releasesAnnotated[releaseNumber] = "%s <= specified release" % releasesAnnotated[releaseNumber]
 
-            if releaseNumber > 0 and not ignoreReleaseFlag:
-                # not the newest release
+            if releaseNumber > 0 and not ignoreReleaseFlag and not webhook:
+                # not the newest release (manual deploy only)
                 temp = "ATTENTION!\n"
                 temp += ("Specified release ('%s') is not the newest on this branch. Will set release to the newest one ('%s').\n" +
                            "If you want to checkout your release anyway, add query param 'ignoreRelease=1' to URL.\n") % (tag, releases[0])
@@ -264,10 +264,26 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
                 output = temp + "===========================\n" + output
 
                 tag = releases[0]
-            elif ignoreReleaseFlag:
-                # ignore newest release
+
+            elif ignoreReleaseFlag and not webhook:
+                # ignore newest release (manual deploy only)
                 output += ("[!] Specified release ('%s') is not the newest on this branch.\n" +
                            "    Ignoring this and checkout this release anyway.\n\n") % releases[0]
+
+            elif webhook and not releaseOnly:
+                # auto deploy only and releaseOnly disabled branch
+                temp = "ATTENTION!\nreleaseOnly Mode for ('" + branch + "') disabled.\n" + \
+                       "Release webhook invocation only restores latest push.\n\n\n===========================\n"
+                output = temp + output
+                tag = None
+
+            elif webhook and releaseOnly and releaseNumber > 0:
+                # auto deploy only and releaseOnly branch
+                temp = "ATTENTION!\nreleaseOnly Mode for ('" + branch + "') enabled.\n" + \
+                       "Specified release is not the newest release. Release webhook invocation only pulls latest release.\n\n\n===========================\n"
+                output = temp + output
+                tag = releases[0]
+
 
     # checkout tag
     if tag and os.path.exists(repoPath):
@@ -282,7 +298,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
     if firstSetup and not error:
         # launch setup script
         if os.path.exists(repoPath + "setup"):
-            setupOut, setupErr = call([repoPath + "setup", branch])
+            setupOut, setupErr = call([repoPath + "setup", branch, request.headers["Host"]])
             output += addOutput("[+] Setup Script", setupOut, setupErr)
             error |= gitError
         else:
@@ -290,7 +306,7 @@ def downloadFromGit(repoName, force=False, branch="master", tag=None):
     elif not error:
         # launch reload script
         if os.path.exists(repoPath + "reload"):
-            relOut, relErr = call([repoPath + "reload", branch])
+            relOut, relErr = call([repoPath + "reload", branch, request.headers["Host"]])
             output += addOutput("[+] reload script", relOut, relErr)
             error |= relErr
         else:
@@ -396,7 +412,7 @@ def deploy(repoName, branch="master", tag=None):
 
     force = True if request.args.get("force") and request.args.get("force") != "0" else False
 
-    resp = downloadFromGit(repoName, force=force, branch=branch, tag=tag)
+    resp = downloadFromGit(repoName, force=force, branch=branch, tag=tag, webhook=False)
     if resp.status_code >= 400:
         LOGGER.warning(resp.get_data(as_text=True).strip())
     else:
@@ -429,10 +445,6 @@ def info():
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
-    cmd = "env"
-    gitOut, gitError = call(cmd, shell=True)
-    output += addOutput("[+] " + cmd, gitOut, gitError)
-
     cmd = "which python"
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
@@ -441,7 +453,13 @@ def info():
     gitOut, gitError = call(cmd, shell=True)
     output += addOutput("[+] " + cmd, gitOut, gitError)
 
-    output += "[+] current sys.path:\n    " + "\n".join(sys.path)
+    output += "[+] current sys.path:\n" + "\n".join(map(lambda x: "    %s" % x, sys.path)) + "\n\n"
+
+    output += "[+] Request-Headers:\n    {\n" + "\n".join(map(lambda x: "       \"%s\": \"%s\"" %(x[0], x[1]), request.headers.items())) + "\n    }\n\n"
+
+    cmd = "env"
+    gitOut, gitError = call(cmd, shell=True)
+    output += addOutput("[+] " + cmd, gitOut, gitError)
 
     return Response(output, content_type=contenttype)
 

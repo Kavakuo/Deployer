@@ -1,6 +1,6 @@
 # Readme
 
-Cloning is done with:
+Cloning is done with:  
 `git clone -b [branch] git@github.com:Kavakuo/[repoName].git .`
 
 Pulling is done with:
@@ -18,10 +18,11 @@ git checkout TAG    # optional
 * Support for `reload` and `setup` script
     * `setup` is launched after cloning (only on first deployment)
     * `reload` is launched after pulling (for any other deployment)
-* Option to auto deploy only releases
-* Select which branches should auto deploy
+    * Both scripts take two arguments the current BranchName and the Host field from the HTTP request header
+* Option to auto deploy only releases.
+* Select which branches should auto deploy.
     * `config.py` file
-    * put a `disabled[-branchName]` file into your repo to disable auto deploy
+    * Put a `disabled[-branchName]` file into your repo to disable auto deploy.
 * Support for GitHub Push and Release Webhooks
     * `/github` API Endpoint
 * API to deploy manually
