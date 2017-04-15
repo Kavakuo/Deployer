@@ -1,7 +1,7 @@
 import logging
 from logging import StreamHandler
 from logging.handlers import WatchedFileHandler, SMTPHandler
-from formatter_const import *
+from .formatter_const import *
 
 def loggerWithName(name):
     """

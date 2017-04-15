@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08878daa-9a94-46d5-91b4-268711396bde" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/keybd_closed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/keybd_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/keybd_closed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/keybd_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/keybd_closed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/keybd_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/keybd_closed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/keybd_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/keybd_closed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/keybd_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBitbucket_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGithub_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGitlab_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testManual_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/coverage_html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.ba-throttle-debounce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.isonscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.tablesorter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/status.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBitbucket_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/coverage_html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.ba-throttle-debounce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.isonscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.tablesorter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/status.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGithub_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/coverage_html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.ba-throttle-debounce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.isonscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.tablesorter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/status.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGitlab_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/coverage_html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.ba-throttle-debounce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.isonscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.tablesorter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/status.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testManual_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/coverage_html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.ba-throttle-debounce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.isonscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.tablesorter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/status.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/classes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/context.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/functions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/config_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testBase.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testBitbucket.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testGithub.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testGitlab.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testManual.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/formatter_const.py" afterPath="$PROJECT_DIR$/src/utils/formatter_const.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/logger.py" afterPath="$PROJECT_DIR$/src/utils/logger.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config_sample.py" afterPath="$PROJECT_DIR$/config_sample.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/require.txt" afterPath="$PROJECT_DIR$/require.txt" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_create_latestTag.coverage" NAME="Unittests for tests.GitHubTestCase.test_create_latestTag Coverage Results" MODIFIED="1491843650418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_in_testBitbucket_py.coverage" NAME="Unittests in testBitbucket.py Coverage Results" MODIFIED="1492204019275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$main.coverage" NAME="main Coverage Results" MODIFIED="1491996910883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$test.coverage" NAME="test Coverage Results" MODIFIED="1492187447870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_create_notLatestTag.coverage" NAME="Unittests for tests.GitHubTestCase.test_create_notLatestTag Coverage Results" MODIFIED="1491843712842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployment$main.coverage" NAME="main Coverage Results" MODIFIED="1491506010609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_pushEvent_releaseOnly.coverage" NAME="Unittests for tests.GitHubTestCase.test_pushEvent_releaseOnly Coverage Results" MODIFIED="1491840463377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1492204094160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_test_data_testBitbucket_BitbucketTestCase_test_manual_bitbucket.coverage" NAME="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket Coverage Results" MODIFIED="1492203940239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_test_data_testManual_ManualTestCase_test_latestRelease.coverage" NAME="Unittests for test_data.testManual.ManualTestCase.test_latestRelease Coverage Results" MODIFIED="1492192308115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployment$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1491416149606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_release_notNewest.coverage" NAME="Unittests for tests.GitHubTestCase.test_release_notNewest Coverage Results" MODIFIED="1491842561843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_test_data_testManual_ManualTestCase_test_tagOnlyOW.coverage" NAME="Unittests for test_data.testManual.ManualTestCase.test_tagOnlyOW Coverage Results" MODIFIED="1492188245765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_test_data_testManual_ManualTestCase_test_latest.coverage" NAME="Unittests for test_data.testManual.ManualTestCase.test_latest Coverage Results" MODIFIED="1492192301364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_test_data_testManual_ManualTestCase_test_releaseOnlyNotNewestReleaseOW.coverage" NAME="Unittests for test_data.testManual.ManualTestCase.test_releaseOnlyNotNewestReleaseOW Coverage Results" MODIFIED="1492176259187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_in_testGithub_py.coverage" NAME="Unittests in testGithub.py Coverage Results" MODIFIED="1492199154338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_release_newest.coverage" NAME="Unittests for tests.GitHubTestCase.test_release_newest Coverage Results" MODIFIED="1491842412086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_in_testGitlab_py.coverage" NAME="Unittests in testGitlab.py Coverage Results" MODIFIED="1492199418302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_in_testManual_py.coverage" NAME="Unittests in testManual.py Coverage Results" MODIFIED="1492199688388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_test_data_testBitbucket_BitbucketTestCase_test_manualWrongApi.coverage" NAME="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi Coverage Results" MODIFIED="1492203989879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_pushEvent_noWhitelistOW.coverage" NAME="Unittests for tests.GitHubTestCase.test_pushEvent_noWhitelistOW Coverage Results" MODIFIED="1491840543895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_test_data_testBitbucket_GitlabTestCase_test_manual_bitbucket.coverage" NAME="Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket Coverage Results" MODIFIED="1492203892371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_release_releaseUnknown.coverage" NAME="Unittests for tests.GitHubTestCase.test_release_releaseUnknown Coverage Results" MODIFIED="1491842941102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_pushEvent_tagOnly.coverage" NAME="Unittests for tests.GitHubTestCase.test_pushEvent_tagOnly Coverage Results" MODIFIED="1491840860486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase.coverage" NAME="Unittests for tests.GitHubTestCase Coverage Results" MODIFIED="1491843830842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Deployer$Unittests_in_tests_py.coverage" NAME="Unittests in tests.py Coverage Results" MODIFIED="1491843892300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/CodeCoverage/test/" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Deployer" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-791">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <element signature="e#16#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test_data/config_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testGithub.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test_data/testGithub.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_sample.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config_sample.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>branch</find>
+      <find>request.</find>
+      <find>DEBUG</find>
+      <find>_pushEvent_</find>
+      <find>return</find>
+      <find>CONFIG</find>
+      <find>addTestSeq\(</find>
+      <find>\bCONFIG\b</find>
+      <find>tag ==</find>
+      <find>\bbranch\b</find>
+      <find>.isRelease</find>
+      <find>.isEvent</find>
+      <find>dl_unhandledReleaseEvent</find>
+      <find>dl_tagOnlyNoTag</find>
+      <find>dl_releaseOnlyNoRelease</find>
+      <find>dl_checkoutFailed</find>
+      <find>[^(]+dl_deploySuccess,\s*</find>
+      <find>checkoutSuccess</find>
+      <find>[^(]*dl_checkoutSuccess</find>
+      <find>[^(]*dl_deployFailed,\s*</find>
+      <find>mock</find>
+      <find>dl_releaseOnlyNotLatestRelRelKnown</find>
+      <find>release_invalidCredentials</find>
+      <find>dl_notNewestTagOW</find>
+      <find>ignoreTagDate</find>
+      <find>assert ([^n]+)</find>
+      <find>assert ([^\n]+)</find>
+      <find>getLatest</find>
+      <find>main.github</find>
+      <find>TestRepo-Gitlab</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>'</replace>
+      <replace>CONFIG</replace>
+      <replace>contenttype</replace>
+      <replace>=</replace>
+      <replace>_push_</replace>
+      <replace>CONTEXT.addTestSeq\(</replace>
+      <replace>CONTEXT.CONFIG</replace>
+      <replace>deployInfo.branchName</replace>
+      <replace>.isRelease</replace>
+      <replace>main</replace>
+      <replace>self.assertTrue($1)</replace>
+      <replace>main.gitlab</replace>
+      <replace>TestRepo-Bitbucket</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/untitled.py" />
+        <option value="$PROJECT_DIR$/logger.py" />
+        <option value="$PROJECT_DIR$/log.log" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/payload_github_push.json" />
+        <option value="$PROJECT_DIR$/reload.sh" />
+        <option value="$PROJECT_DIR$/reload" />
+        <option value="$PROJECT_DIR$/config_test.py" />
+        <option value="$PROJECT_DIR$/testKeys.py" />
+        <option value="$PROJECT_DIR$/tests.py" />
+        <option value="$PROJECT_DIR$/test_data/testKeys.py" />
+        <option value="$PROJECT_DIR$/test_data/__init__.py" />
+        <option value="$PROJECT_DIR$/test_data/test.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/utils/logger.py" />
+        <option value="$PROJECT_DIR$/classes.py" />
+        <option value="$PROJECT_DIR$/context.py" />
+        <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/src/functions.py" />
+        <option value="$PROJECT_DIR$/src/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/src/test/__init__.py" />
+        <option value="$PROJECT_DIR$/src/test/test.py" />
+        <option value="$PROJECT_DIR$/src/test_data/test.py" />
+        <option value="$PROJECT_DIR$/src/test_data/testBase.py" />
+        <option value="$PROJECT_DIR$/src/test_data/testManual.py" />
+        <option value="$PROJECT_DIR$/src/test_data/testGitlab.py" />
+        <option value="$PROJECT_DIR$/src/test_data/testGithub.py" />
+        <option value="$PROJECT_DIR$/src/classes.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/context.py" />
+        <option value="$PROJECT_DIR$/src/test_data/testBitbucket.py" />
+        <option value="$PROJECT_DIR$/src/test.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test_data/config_test.py" />
+        <option value="$PROJECT_DIR$/config_sample.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="52" />
+    <option name="y" value="23" />
+    <option name="width" value="1387" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="untitled" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="untitled" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in test.py">
+    <configuration default="false" name="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for test_data.testManual.ManualTestCase.test_latestRelease" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_data.testManual.ManualTestCase.test_latestRelease&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="untitled" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in testBitbucket.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/test_data/testBitbucket.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in testGitlab.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/test_data/testGitlab.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in testGithub.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/test_data/testGithub.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in testManual.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/deployment/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/test_data/testManual.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testBitbucket.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testGitlab.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.main" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testGithub.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in testManual.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" />
+      <item index="10" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testManual.ManualTestCase.test_latestRelease" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testManual.ManualTestCase.test_latestRelease" />
+      </list>
+    </recent_temporary>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08878daa-9a94-46d5-91b4-268711396bde" name="Default" comment="" />
+      <created>1491390811545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491390811545</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_data_testBitbucket_BitbucketTestCase_test_manualWrongApi - 2017.04.14 at 23h 06m 31s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_data_testBitbucket_BitbucketTestCase_test_manual_bitbucket - 2017.04.14 at 23h 05m 20s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_data_testBitbucket_BitbucketTestCase_test_manual_bitbucket - 2017.04.14 at 23h 06m 02s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_data_testBitbucket_GitlabTestCase_test_manual_bitbucket - 2017.04.14 at 23h 04m 01s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_data_testBitbucket_GitlabTestCase_test_manual_bitbucket - 2017.04.14 at 23h 04m 09s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_data_testBitbucket_GitlabTestCase_test_manual_bitbucket - 2017.04.14 at 23h 04m 29s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_data_testBitbucket_GitlabTestCase_test_manual_bitbucket - 2017.04.14 at 23h 04m 38s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_data_testBitbucket_GitlabTestCase_test_manual_bitbucket - 2017.04.14 at 23h 04m 53s.xml">
+      <configuration name="Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_testBitbucket_py - 2017.04.14 at 23h 07m 11s.xml">
+      <configuration name="Unittests in testBitbucket.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.04.14 at 23h 09m 17s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="52" y="23" width="1387" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22420382" sideWeight="0.5063197" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611465" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20764332" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22420382" sideWeight="0.4936803" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32936803" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18215613" sideWeight="0.65732485" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3296131" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18215613" sideWeight="0.34267515" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18898809" sideWeight="0.5910828" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2624204" sideWeight="0.4959108" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32936803" sideWeight="0.49425286" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="154" y="123" width="1186" height="677" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32342008" sideWeight="0.50574714" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/TestRepos/TestRepo-Releases" />
+      <path value="$PROJECT_DIR$/TestRepos/TestRepo-Tags" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/functions.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/main.py</url>
+          <line>247</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="76" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/deployment/lib/python2.7/site-packages/flask/app.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/deployment/lib/python3.6/site-packages/werkzeug/wrappers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="474" column="0" lean-forward="true" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="591" column="16" lean-forward="true" selection-start-line="591" selection-start-column="16" selection-end-line="591" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskLog.log" />
+    <entry file="file://$PROJECT_DIR$/log.log" />
+    <entry file="file://$PROJECT_DIR$/logger.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/deployment/lib/python3.6/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="1608" column="33" lean-forward="false" selection-start-line="1608" selection-start-column="33" selection-end-line="1608" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payload_github_push.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reload">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.1/python_stubs/897950329/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="1163" column="8" lean-forward="false" selection-start-line="1163" selection-start-column="8" selection-end-line="1163" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testKeys.py" />
+    <entry file="file://$PROJECT_DIR$/config_test.py" />
+    <entry file="file://$PROJECT_DIR$/tests.py" />
+    <entry file="file://$PROJECT_DIR$/test_data/testKeys.py" />
+    <entry file="file://$PROJECT_DIR$/test_data/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/test_data/test.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/utils/logger.py" />
+    <entry file="file://$PROJECT_DIR$/classes.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/context.py" />
+    <entry file="file://$PROJECT_DIR$/functions.py" />
+    <entry file="file://$PROJECT_DIR$/src/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="61" column="8" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="1577" column="0" lean-forward="false" selection-start-line="1577" selection-start-column="0" selection-end-line="1577" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="337" column="0" lean-forward="false" selection-start-line="337" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="438" column="8" lean-forward="false" selection-start-line="438" selection-start-column="8" selection-end-line="438" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="1180" column="0" lean-forward="false" selection-start-line="1180" selection-start-column="0" selection-end-line="1180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_data/testManual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_data/testGitlab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="e#15#83#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="135" column="30" lean-forward="false" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_data/testBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_data/testBitbucket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="90" column="72" lean-forward="false" selection-start-line="90" selection-start-column="72" selection-end-line="90" selection-end-column="72" />
+          <folding>
+            <element signature="e#15#83#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="83" />
+          <folding>
+            <element signature="e#15#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="93" column="40" lean-forward="true" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_data/config_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_data/testGithub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-791">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#16#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
