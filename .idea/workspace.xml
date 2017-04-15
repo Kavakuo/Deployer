@@ -2,152 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08878daa-9a94-46d5-91b4-268711396bde" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/keybd_closed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/keybd_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/keybd_closed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/keybd_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/keybd_closed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/keybd_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/keybd_closed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/keybd_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/keybd_closed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/keybd_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBitbucket_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGithub_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGitlab_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testManual_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_test_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/coverage_html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.ba-throttle-debounce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.hotkeys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.isonscreen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/jquery.tablesorter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/status.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/test/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBitbucket_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/coverage_html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.ba-throttle-debounce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.hotkeys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.isonscreen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/jquery.tablesorter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/status.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testBitbucket/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGithub_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/coverage_html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.ba-throttle-debounce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.hotkeys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.isonscreen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/jquery.tablesorter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/status.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGithub/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testGitlab_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/coverage_html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.ba-throttle-debounce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.hotkeys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.isonscreen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/jquery.tablesorter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/status.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testGitlab/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_config_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_classes_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_context_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_functions_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_main_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_config_test_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testBase_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_test_data_testManual_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_utils___init___py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_formatter_const_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/_Users_Philipp_Desktop_Scripts_Deployer_src_utils_logger_py.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/coverage_html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.ba-throttle-debounce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.hotkeys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.isonscreen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/jquery.tablesorter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/status.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeCoverage/testManual/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/classes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/context.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/functions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/config_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testBase.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testBitbucket.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testGithub.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testGitlab.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test_data/testManual.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/formatter_const.py" afterPath="$PROJECT_DIR$/src/utils/formatter_const.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/logger.py" afterPath="$PROJECT_DIR$/src/utils/logger.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/validateConfig.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config_sample.py" afterPath="$PROJECT_DIR$/config_sample.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/require.txt" afterPath="$PROJECT_DIR$/require.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes.py" afterPath="$PROJECT_DIR$/src/classes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/context.py" afterPath="$PROJECT_DIR$/src/context.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -159,7 +21,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_create_latestTag.coverage" NAME="Unittests for tests.GitHubTestCase.test_create_latestTag Coverage Results" MODIFIED="1491843650418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Deployer$Unittests_in_testBitbucket_py.coverage" NAME="Unittests in testBitbucket.py Coverage Results" MODIFIED="1492204019275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/Deployer$main.coverage" NAME="main Coverage Results" MODIFIED="1491996910883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Deployer$validateConfig.coverage" NAME="validateConfig Coverage Results" MODIFIED="1492290165121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Deployer$main.coverage" NAME="main Coverage Results" MODIFIED="1492291662053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Deployer$test.coverage" NAME="test Coverage Results" MODIFIED="1492187447870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Deployer$Unittests_for_tests_GitHubTestCase_test_create_notLatestTag.coverage" NAME="Unittests for tests.GitHubTestCase.test_create_notLatestTag Coverage Results" MODIFIED="1491843712842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Deployment$main.coverage" NAME="main Coverage Results" MODIFIED="1491506010609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -210,8 +73,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-791">
-              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="320">
+              <caret line="825" column="15" lean-forward="true" selection-start-line="825" selection-start-column="15" selection-end-line="825" selection-end-column="15" />
               <folding>
                 <element signature="e#16#58#0" expanded="true" />
               </folding>
@@ -219,32 +82,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test_data/config_test.py">
+      <file leaf-file-name="context.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/context.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="450">
+              <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testGithub.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test_data/testGithub.py">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="200">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config_sample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config_sample.py">
+      <file leaf-file-name="validateConfig.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/validateConfig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="1698">
+              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+              <folding>
+                <element signature="e#39#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,8 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>branch</find>
-      <find>request.</find>
       <find>DEBUG</find>
       <find>_pushEvent_</find>
       <find>return</find>
@@ -291,6 +154,8 @@
       <find>getLatest</find>
       <find>main.github</find>
       <find>TestRepo-Gitlab</find>
+      <find>key</find>
+      <find>print(</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -306,6 +171,7 @@
       <replace>self.assertTrue($1)</replace>
       <replace>main.gitlab</replace>
       <replace>TestRepo-Bitbucket</replace>
+      <replace>LOGGER.info(</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -335,7 +201,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/src/functions.py" />
         <option value="$PROJECT_DIR$/src/utils/__init__.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/src/test/__init__.py" />
         <option value="$PROJECT_DIR$/src/test/test.py" />
         <option value="$PROJECT_DIR$/src/test_data/test.py" />
@@ -343,14 +208,17 @@
         <option value="$PROJECT_DIR$/src/test_data/testManual.py" />
         <option value="$PROJECT_DIR$/src/test_data/testGitlab.py" />
         <option value="$PROJECT_DIR$/src/test_data/testGithub.py" />
-        <option value="$PROJECT_DIR$/src/classes.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/context.py" />
         <option value="$PROJECT_DIR$/src/test_data/testBitbucket.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test_data/config_test.py" />
+        <option value="$PROJECT_DIR$/src/classes.py" />
         <option value="$PROJECT_DIR$/config_sample.py" />
+        <option value="$PROJECT_DIR$/src/validateConfig.py" />
+        <option value="$PROJECT_DIR$/src/context.py" />
+        <option value="$PROJECT_DIR$/validateConfig.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -361,7 +229,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="52" />
+    <option name="x" value="53" />
     <option name="y" value="23" />
     <option name="width" value="1387" />
     <option name="height" value="877" />
@@ -383,6 +251,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -423,7 +292,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test_data" />
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,7 +312,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,6 +337,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -484,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test.py">
+  <component name="RunManager" selected="Python.main">
     <configuration default="false" name="Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -870,7 +739,26 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="11">
+    <configuration default="false" name="validateConfig" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validateConfig.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testBitbucket.py" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testGitlab.py" />
       <item index="2" class="java.lang.String" itemvalue="Python.main" />
@@ -878,10 +766,11 @@
       <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testGithub.py" />
       <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test.py" />
       <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in testManual.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket" />
-      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" />
-      <item index="10" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testManual.ManualTestCase.test_latestRelease" />
+      <item index="7" class="java.lang.String" itemvalue="Python.validateConfig" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manualWrongApi" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.BitbucketTestCase.test_manual_bitbucket" />
+      <item index="10" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testBitbucket.GitlabTestCase.test_manual_bitbucket" />
+      <item index="11" class="java.lang.String" itemvalue="Python tests.Unittests for test_data.testManual.ManualTestCase.test_latestRelease" />
     </list>
     <recent_temporary>
       <list size="4">
@@ -970,22 +859,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="23" width="1387" height="877" extended-state="6" />
+    <frame x="53" y="23" width="1387" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22420382" sideWeight="0.5063197" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22420382" sideWeight="0.4936803" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611465" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20764332" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22420382" sideWeight="0.4936803" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32936803" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18215613" sideWeight="0.65732485" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18215613" sideWeight="0.64203614" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3296131" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18215613" sideWeight="0.34267515" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18898809" sideWeight="0.5910828" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18215613" sideWeight="0.3579639" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2624204" sideWeight="0.4959108" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18898809" sideWeight="0.5910828" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32936803" sideWeight="0.49425286" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1025,28 +914,15 @@
           <line>14</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>247</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="76" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/main.py" />
@@ -1059,24 +935,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="591" column="16" lean-forward="true" selection-start-line="591" selection-start-column="16" selection-end-line="591" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FlaskLog.log" />
     <entry file="file://$PROJECT_DIR$/log.log" />
     <entry file="file://$PROJECT_DIR$/logger.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/deployment/lib/python3.6/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="1608" column="33" lean-forward="false" selection-start-line="1608" selection-start-column="33" selection-end-line="1608" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/payload_github_push.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1164,14 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="438" column="8" lean-forward="false" selection-start-line="438" selection-start-column="8" selection-end-line="438" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1179,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="1180" column="0" lean-forward="false" selection-start-line="1180" selection-start-column="0" selection-end-line="1180" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,25 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-224">
           <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="19" />
-          <folding>
-            <element signature="e#15#83#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="135" column="30" lean-forward="false" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/context.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,7 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,9 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="90" column="72" lean-forward="false" selection-start-line="90" selection-start-column="72" selection-end-line="90" selection-end-column="72" />
-          <folding>
-            <element signature="e#15#83#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1263,30 +1092,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test_data/testGithub.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="1292" column="0" lean-forward="false" selection-start-line="1292" selection-start-column="0" selection-end-line="1292" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/selectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="374" column="16" lean-forward="true" selection-start-line="374" selection-start-column="16" selection-end-line="374" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config_sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="230">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/deployment/lib/python3.6/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="1597" column="0" lean-forward="false" selection-start-line="1597" selection-start-column="0" selection-end-line="1597" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validateConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1698">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-791">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="320">
+          <caret line="825" column="15" lean-forward="true" selection-start-line="825" selection-start-column="15" selection-end-line="825" selection-end-column="15" />
           <folding>
             <element signature="e#16#58#0" expanded="true" />
           </folding>

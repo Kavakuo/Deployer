@@ -6,6 +6,7 @@ from utils import logger
 from classes import DeployInfo, APISettings, Release, TEST_SEQs
 from context import CONTEXT
 from functions import call, addOutput
+from functools import wraps
 
 
 flaskLogPath = os.path.join(CONTEXT.PROJECT_FOLDER, "Logs", "FlaskLog.log")
@@ -301,10 +302,11 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
             if len(gitTags) > 0:
                 CONTEXT.addTestSeq(TEST_SEQs.dl_nwhTagLatest)
                 tag = gitTags[0]
-                output += "[+] switch to latest tag ('" + tag +"') on ('"+deployInfo.branchName+"')\n\n"
+                output += "[+] Switch to latest tag ('" + tag +"') on ('"+deployInfo.branchName+"')\n\n"
             else:
                 CONTEXT.addTestSeq(TEST_SEQs.dl_noTagsAvailable)
                 output = "ATTENTION!\nNo tag available, switch to latest push.\n\n\n===========================\n" + output
+                output += "[!] Switch to latest push\n\n"
                 tag = None
 
         if tag == "latestRelease" and not webhook:
@@ -314,9 +316,10 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
                 CONTEXT.addTestSeq(TEST_SEQs.dl_nwhTagLatestRelease)
                 
                 tag = release.latestReleaseTag
-                output += "[+] switch to latest release ('" + tag + "') on ('" + deployInfo.branchName + "')\n\n"
+                output += "[+] Switch to latest release ('" + tag + "') on ('" + deployInfo.branchName + "')\n\n"
             else:
                 output = "ATTENTION!\nNo release available, switch to latest push.\n\n\n===========================\n" + output
+                output += "[!] Switch to latest push\n\n"
                 tag = None
 
 
@@ -350,9 +353,10 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
                            historyOfTags + "\n\n" + \
                            "If you want to silence this warning, specify the latest tag or set the tag name to 'latest'\n"+\
                            "to always deploy the latest tag.\n\n\n===========================\n"
-    
                     output = temp + output
                     tag = gitTags[0]
+                    output += "[!] Set tag to '" + tag + "' (look at the attention section above)\n\n"
+                    
                 else:
                     CONTEXT.addTestSeq(TEST_SEQs.dl_notNewestTagOW)
                     # not the newest tag, overriding (manual deploy)
@@ -369,6 +373,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
     
                 output = temp + output
                 tag = gitTags[0]
+                output += "[!] Set tag to '" + tag + "' (look at the attention section above)\n\n"
 
 
 
@@ -383,6 +388,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
                            "To deploy the specified tag anyway, add query prameter 'ignoreRelease=1' to URL.\n\n\n===========================\n"
                     output = temp + output
                     tag = release.latestReleaseTag
+                    output += "[!] Set tag to '" + tag + "' (look at the attention section above)\n\n"
                 else:
                     CONTEXT.addTestSeq(TEST_SEQs.dl_releaseOnlyNotLatestRelRelKnownOW)
                     # not latest release, overriding
@@ -401,6 +407,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
                        "Set deploying version to tag '"+ release.latestReleaseTag +"'\n\n\n===========================\n"
                 output = temp + output
                 tag = release.latestReleaseTag
+                output += "[!] Set tag to '" + tag + "' (look at the attention section above)\n\n"
 
 
 
@@ -436,17 +443,17 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
             output += addOutput("[+] Setup Script", setupOut, setupErr)
             error |= gitError
         else:
-            output += "[!] no setup script found\n\n"
+            output += "[!] No setup script found\n\n"
     elif not error:
         # launch reload script
         if os.path.exists(deployInfo.repoPath + "reload"):
             relOut, relErr = call([deployInfo.repoPath + "reload", deployInfo.branchName, request.headers["Host"]])
-            output += addOutput("[+] reload script", relOut, relErr)
+            output += addOutput("[+] Reload script", relOut, relErr)
             error |= relErr
         else:
-            output += "[!] no reload script found\n\n"
+            output += "[!] No reload script found\n\n"
     elif error:
-        output += "[!] skip reload or setup script (deploying failed)\n\n"
+        output += "[!] Skip reload or setup script (deploying failed)\n\n"
 
     output = output.strip()
 
@@ -537,8 +544,16 @@ def releaseEvent(repoName, tag, settings, release):
     return Response(output, status=error, content_type=contenttype)
 
 
+def reloadConfig(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        CONTEXT.reloadCONFIG()
+        return func(*args, **kwargs)
+    return wrapper
+
 
 @app.route('/github', methods=["GET", "POST"])
+@reloadConfig
 def github():
     settings = APISettings("github")
 
@@ -608,6 +623,7 @@ def github():
     
 
 @app.route('/gitlab', methods=["GET", "POST"])
+@reloadConfig
 def gitlab():
     settings = APISettings("gitlab")
 
@@ -655,6 +671,7 @@ def gitlab():
 
 
 @app.route('/bitbucket', methods=["GET", "POST"])
+@reloadConfig
 def bitbucket():
     settings = APISettings("bitbucket")
     
@@ -695,12 +712,63 @@ def bitbucket():
     
         
 
+def requiresAuth(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        if not CONTEXT.PROTECTION_COOKIE and not CONTEXT.PROTECTION:
+            # no protection configured
+            return func(*args, **kwargs)
+        
+        auth = request.authorization
+        cookie = None
+        respStr = "Authentication"
+        
+        # store result of func temporarily
+        resp = None
+        
+        # read the cookie from request, if a cookie is set in configuration
+        if CONTEXT.PROTECTION_COOKIE:
+            cookie = request.cookies.get(CONTEXT.PROTECTION_COOKIE["name"])
+        
+        if auth and CONTEXT.PROTECTION:
+            # Authorization
+            if auth.username == CONTEXT.PROTECTION["username"] and auth.password == CONTEXT.PROTECTION["password"]:
+                resp = func(*args, **kwargs)
+            else:
+                respStr = "Invalid credentials"
+
+        # check for valid cookie
+        if cookie and cookie == CONTEXT.PROTECTION_COOKIE["value"]:
+            resp = func(*args, **kwargs)
+        
+        if resp:
+            # set cookie to resp
+            if CONTEXT.PROTECTION_COOKIE:
+                if not isinstance(resp, Response):
+                    resp = Response(resp)
+                
+                max_age = 31536000 if not CONTEXT.PROTECTION_COOKIE["maxAge"] else CONTEXT.PROTECTION_COOKIE["maxAge"]
+                httponly = True
+                path = "/" if not CONTEXT.PROTECTION_COOKIE["path"] else CONTEXT.PROTECTION_COOKIE["path"]
+                secure = False if not CONTEXT.PROTECTION_COOKIE["secureFlag"] else CONTEXT.PROTECTION_COOKIE["secureFlag"]
+
+                resp.set_cookie(CONTEXT.PROTECTION_COOKIE["name"], CONTEXT.PROTECTION_COOKIE["value"], max_age=max_age, httponly=httponly, secure=secure, path=path)
+                
+            return resp
+        
+        # send WWW-Authenticate Header
+        return Response(respStr, status=401, headers={"WWW-Authenticate": "Basic realm=\"Deployer\""})
+        
+    return wrapper
+
+
 
 @app.route('/deploy/<repoName>', methods=["GET", "POST"])
 @app.route('/deploy/<repoName>/<branch>', methods=["GET", "POST"])
 @app.route('/deploy/<repoName>/<branch>/<tag>', methods=["GET", "POST"])
+@reloadConfig
+@requiresAuth
 def deploy(repoName, branch="master", tag=None):
-    CONTEXT.reloadCONFIG()
     
     if request.method == "GET":
         return Response('<form method="POST"><input id="button" type="submit" value="Start"></form><script>document.getElementById("button").focus();</script>')

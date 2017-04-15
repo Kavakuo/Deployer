@@ -43,6 +43,20 @@ Rename `config_sample.py` to `config.py` after cloning!
 {
     "mailLogger": logging.handlers.SMTPHandler(),
     "defaultApi": "API_NAME", # optional
+
+    "protection": { # optional
+        "username":"d",
+        "password":"h",
+        
+        # cookie for manual deployment to avoid a new login on every session
+        "cookie": {
+            "name": "saveLogin",
+            "value": "abc",
+            "secureFlag": False,
+            "path": "/",
+            "maxAge": 31536000
+        }
+    },
     
     "API_NAME": {
         "accessToken":"TOKEN",
@@ -70,7 +84,7 @@ Rename `config_sample.py` to `config.py` after cloning!
 }
 ```
 
-For a more advanced config file take a look at the `config_test.py` file in the `src/test_data/` folder. This is used for the unittests.
+For a more advanced config file take a look at the `config_test.py` file in the `src/test_data/` folder. This is used for the unittests. To validate the configuration file, launch the included `validateConfig.py` script.
 
 
 * `mailLogger: logging.handlers.SMTPHandler()`  
@@ -78,6 +92,33 @@ For a more advanced config file take a look at the `config_test.py` file in the 
 
 * `defaultApi: String`  
 Every listed or unlisted REPO_NAME without `api`-Key is assumed to be available with `defaultApi`. The value of this key could be `github`, `gitlab` or `bitbucket`. This is only required if you want to use the manual deployment feature.
+
+* `protection: Dictionary`  
+Optional dictionary which configures the authentication for the manual deployment feature at the `/deploy` API endpoint.
+
+    * `username: String`  
+    The username for the Basic Authentication.
+
+    * `password: String`  
+    The password for the Basic Authentication.
+
+    * `cookie: Dictionary`  
+    Optional cookie dictionary to support authentication with a cookie to only need login once.
+
+        * `name: String`  
+        Name of the login cookie
+
+        * `value: String`  
+        Value of the login cookie
+
+        * `secureFlag: Bool` (optional)  
+        **Default:** False, if true the cookie is only sent over https.
+
+        * `path: String` (optional)  
+        **Default:** "/", path for the cookie.
+
+        * `maxAge: Int` (optional)
+        **Default:** 31536000 (1 year), how long the cookie is valid.
 
 * `API_NAME: Dictionary`  
 `API_NAME` is a placeholder and could be `github`, `gitlab` or `bitbucket`. Multiple `API_NAME` dictionaries are possible to support multiple services.

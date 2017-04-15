@@ -4,8 +4,9 @@
 from utils import logger
 import sys, os
 sys.path.insert(0, os.path.realpath(os.path.join(os.path.dirname(__file__), "..")))
-import config
+import config, hashlib
 from copy import copy
+import validateConfig
 
 
 version = sys.version_info
@@ -47,9 +48,15 @@ class __Context(object):
         self.LOGGER = logger.loggerWithName("Deployment")
         self.CONFIG = config.CONFIG
         self.PROJECT_FOLDER = os.path.realpath(os.path.join(os.path.dirname(__file__), ".."))
-
+        
+        self.PROTECTION = None
+        self.PROTECTION_COOKIE = None
+        
+        self.configPath = os.path.join(self.PROJECT_FOLDER, "config.py")
+        self.configHash = self._calcConfigHash()
+        
         # validate CONFIG
-        if "github" not in self.CONFIG:
+        if "github" not in self.CONFIG and "gitlab" not in self.CONFIG and "bitbucket" not in self.CONFIG:
             print("Invalid config.py, check sample!")
             sys.exit(1)
 
@@ -57,9 +64,17 @@ class __Context(object):
             self.DEBUG = True
             
         self._configureLogger()
+        self._validateConfigFile()
+        self._loadProtection()
         
+
+
     def _configureLogger(self):
         logPath = os.path.join(self.PROJECT_FOLDER, "Logs", "log.log")
+        os.makedirs(os.path.join(self.PROJECT_FOLDER, "Logs"), exist_ok=True)
+        
+        while len(self.LOGGER.handlers) > 0:
+            self.LOGGER.handlers.remove(self.LOGGER.handlers[0])
         
         STREAM_HANDLER = logger.StreamHandler(sys.stdout)
         self.LOGGER.addHandler(logger.configureHandler(logger.WatchedFileHandler(logPath, encoding="utf-8"), _CustomFormatter()))
@@ -69,6 +84,63 @@ class __Context(object):
         if not self.DEBUG and "mailLogger" in self.CONFIG and not self.TESTING:
             self.LOGGER.addHandler(logger.configureHandler(self.CONFIG["mailLogger"], logger.PNMailLogFormatter(), logLevel=logger.logging.CRITICAL))
 
+
+    def _loadProtection(self):
+        protection = self.CONFIG.get("protection")
+        
+        if protection:
+            username = protection.get("username")
+            password = protection.get("password")
+            cookie = protection.get("cookie")
+            if not username or not password:
+                # invalid configuration
+                if not cookie:
+                    self.LOGGER.critical("Invalid 'protection' dictonary, username or password is missing.")
+                else:
+                    self.LOGGER.warning("Invalid 'protection' dictonary, username or password is missing.")
+                self.PROTECTION = None
+            else:
+                self.PROTECTION = protection
+                
+            if cookie:
+                cookieVal = cookie.get("value")
+                cookieName = cookie.get("name")
+                
+                if not cookieVal or not cookieName:
+                    # invalid cookie configuration
+                    if not self.PROTECTION:
+                        self.LOGGER.critical("Invalid 'protection' cookie dictionary, name or value is missing.")
+                    else:
+                        self.LOGGER.warning("Invalid 'protection' cookie dictionary, name or value is missing.")
+                        
+                    self.PROTECTION_COOKIE = None
+                else:
+                    self.PROTECTION_COOKIE = cookie
+                    
+            if self.PROTECTION and not self.PROTECTION_COOKIE:
+                self.LOGGER.info("Authentication for manual deployment only possible with username/password")
+            elif self.PROTECTION_COOKIE and not self.PROTECTION:
+                self.LOGGER.info("Authentication for manual deployment only possible with cookie")
+        
+    
+    def _calcConfigHash(self):
+        with open(self.configPath, "rb") as a:
+            content = a.read()
+            return hashlib.sha1(content).hexdigest()
+            
+            
+    def _configNeedsReload(self):
+        return self.configHash != self._calcConfigHash()
+        
+    def _validateConfigFile(self):
+        validateConfig.LOGGER = self.LOGGER
+        self.LOGGER.info("Validating config file...")
+        try:
+            validateConfig.main()
+        except Exception as e:
+            self.LOGGER.critical("Deployer terminates, because config file validation failed with reason: %s" % (str(e)))
+            raise e
+
     def addTestSeq(self, seq):
         assert seq != 1
         
@@ -76,8 +148,16 @@ class __Context(object):
             self.TEST_SEQUENCE.add(seq)
 
     def reloadCONFIG(self):
-        reload(config)
-        self.CONFIG = config.CONFIG
+        if self._configNeedsReload():
+            self.configHash = self._calcConfigHash()
+            
+            self.LOGGER.debug("reload config")
+            reload(config)
+            self.CONFIG = config.CONFIG
+            self._validateConfigFile()
+            
+            self._loadProtection()
+            self._configureLogger()
 
 
 CONTEXT = __Context()
