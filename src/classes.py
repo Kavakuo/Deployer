@@ -12,7 +12,6 @@ LOGGER = logger.logging.Logger("logger")
 
 class APISettings(object):
     def __init__(self, apiName):
-        CONTEXT.reloadCONFIG()
         self.apiName = apiName
         self.rawApiSettings = CONTEXT.CONFIG.get(self.apiName) if CONTEXT.CONFIG.get(self.apiName) else dict()
         self.baseUrl = self.rawApiSettings.get("baseUrl")
