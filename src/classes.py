@@ -16,6 +16,8 @@ class APISettings(object):
         self.rawApiSettings = CONTEXT.CONFIG.get(self.apiName) if CONTEXT.CONFIG.get(self.apiName) else dict()
         self.baseUrl = self.rawApiSettings.get("baseUrl")
         self.deployPath = self.rawApiSettings.get("deployPath")
+        if self.deployPath[-1] != "/":
+            self.deployPath += "/"
         
         # GitHub, repo API access (to get the latest release)
         self.accessToken = self.rawApiSettings.get("accessToken")
@@ -125,6 +127,8 @@ class DeployInfo(object):
             self.repoPath = settings.deployPath + repoName + "-" + branchName[1:] + "/"
         
         self.repoPath = os.path.realpath(self.repoPath)
+        if self.repoPath[-1] != "/":
+            self.repoPath += "/"
 
 
 class TEST_SEQs(object):
