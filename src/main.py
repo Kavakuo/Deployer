@@ -600,8 +600,9 @@ def github():
     # setup git operation
     repoName = jsonData["repository"]["name"]
     release = Release(settings)
+    event = headers["X-GitHub-Event"]
 
-    if headers["X-GitHub-Event"] == "push":
+    if event == "push":
         if "refs/heads" not in jsonData["ref"]:
             LOGGER.debug("No branch push detected, ignore push event.")
             return Response("No branch push detected, ignore push event", content_type=contenttype)
@@ -609,13 +610,39 @@ def github():
         branch = jsonData["ref"].replace("refs/heads/", "")
         return logErrorRespToLevel(downloadFromGit(repoName, settings, branch=str(branch), release=release, webhook=True), LOGGER.critical)
 
-    elif headers["X-GitHub-Event"] == "release":
+    elif event == "release":
         tag = jsonData["release"]["tag_name"]
         return logErrorRespToLevel(releaseEvent(repoName, tag, settings, release), LOGGER.critical)
 
-    elif headers["X-GitHub-Event"] == "create" and jsonData["ref_type"] == "tag":
+    elif event == "create" and jsonData["ref_type"] == "tag":
         tag = jsonData["ref"]
         return logErrorRespToLevel(createTagEvent(repoName, tag, settings, release), LOGGER.critical)
+
+    elif event == "ping":
+        events = jsonData["hook"]["events"]
+        supportedEvents = ["push", "release", "create"]
+        contentType = jsonData["hook"]["config"]["content_type"]
+        
+        for a in supportedEvents:
+            try:
+                events.remove(a)
+            except:
+                pass
+            
+        output = ""
+        error = False
+        if len(events) > 0:
+            output += "[-] Unsupported webhook events configured: " + ", ".join(events) + "\n"
+            error = True
+            
+        if contentType != "json":
+            output += "[-] Unsupported content type. Expected application/json content type in configuration."
+            error = True
+            
+        if error:
+            return requestError(output, code=400)
+        else:
+            return Response("Everything looks good!", content_type=contenttype)
 
     else:
         LOGGER.critical("Received an unsupported GitHub Event: "  + headers["X-GitHub-Event"])
