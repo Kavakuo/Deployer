@@ -802,7 +802,10 @@ def deploy(repoName, branch="master", tag=None):
 
     # get API for repoName
     repoSettings = CONTEXT.CONFIG.get(repoName)
-    api = repoSettings.get("api")
+    api = None
+    
+    if repoSettings:
+        api = repoSettings.get("api")
 
     if not api:
         api = CONTEXT.CONFIG.get("defaultApi")

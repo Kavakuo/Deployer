@@ -3,7 +3,8 @@
 
 from utils import logger
 import sys, os
-sys.path.insert(0, os.path.realpath(os.path.join(os.path.dirname(__file__), "..")))
+projectFolder = os.path.realpath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, projectFolder)
 import config, hashlib
 from copy import copy
 import validateConfig
@@ -32,6 +33,10 @@ class _CustomFormatter(logger.logging.Formatter):
         res = res.replace("\n", "\n\t")
         return res
 
+class _CustomWatchedFileHandler(logger.WatchedFileHandler):
+    def emit(self, record):
+        os.makedirs(os.path.join(projectFolder, "Logs"), exist_ok=True)
+        super().emit(record)
 
 _initalized = False
 
@@ -47,7 +52,7 @@ class __Context(object):
         self.TEST_SEQUENCE = set()
         self.LOGGER = logger.loggerWithName("Deployment")
         self.CONFIG = config.CONFIG
-        self.PROJECT_FOLDER = os.path.realpath(os.path.join(os.path.dirname(__file__), ".."))
+        self.PROJECT_FOLDER = projectFolder
         
         self.PROTECTION = None
         self.PROTECTION_COOKIE = None
@@ -77,7 +82,7 @@ class __Context(object):
             self.LOGGER.handlers.remove(self.LOGGER.handlers[0])
         
         STREAM_HANDLER = logger.StreamHandler(sys.stdout)
-        self.LOGGER.addHandler(logger.configureHandler(logger.WatchedFileHandler(logPath, encoding="utf-8"), _CustomFormatter()))
+        self.LOGGER.addHandler(logger.configureHandler(_CustomWatchedFileHandler(logPath, encoding="utf-8"), _CustomFormatter()))
         self.LOGGER.addHandler(logger.configureHandler(STREAM_HANDLER, logger.logging.Formatter()))
         self.LOGGER.setLevel(logger.logging.DEBUG)
         
