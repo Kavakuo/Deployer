@@ -439,7 +439,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
     if firstSetup and not error:
         # launch setup script
         if os.path.exists(deployInfo.repoPath + "setup"):
-            setupOut, setupErr = call([deployInfo.repoPath + "setup", deployInfo.branchName, request.headers["Host"]])
+            setupOut, setupErr = call([deployInfo.repoPath + "setup", deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
             output += addOutput("[+] Setup Script", setupOut, setupErr)
             error |= gitError
         else:
@@ -447,7 +447,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
     elif not error:
         # launch reload script
         if os.path.exists(deployInfo.repoPath + "reload"):
-            relOut, relErr = call([deployInfo.repoPath + "reload", deployInfo.branchName, request.headers["Host"]])
+            relOut, relErr = call([deployInfo.repoPath + "reload", deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
             output += addOutput("[+] Reload script", relOut, relErr)
             error |= relErr
         else:

@@ -3,7 +3,10 @@
 branch=$1;
 host=$2;
 directory=$PWD;
-parentFolder=$(basename ${PWD})
+parentFolder=$(basename ${PWD});
 
-echo "killall ${parentFolder}.fcgi"
-killall ${parentFolder}.fcgi
+mkdir Logs;
+
+echo "killall ${parentFolder}.fcgi";
+killall ${parentFolder}.fcgi;
+echo "ending";
