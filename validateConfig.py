@@ -5,6 +5,7 @@ import config
 import logging.handlers
 import logging, sys
 import src.utils.logger as logger
+from copy import deepcopy, copy
 
 
 LOGGER = logger.loggerWithName("Deployment")
@@ -142,12 +143,16 @@ def validateRepo(repoName, dic):
     
 
 def main():
-    CONFIG = config.CONFIG
+    # deepcopy can't copy mailLogger. Pop it first and insert it back after copying.
+    logger = config.CONFIG.pop("mailLogger", None)
+    CONFIG = deepcopy(config.CONFIG)
+    if logger:
+        config.CONFIG["mailLogger"] = logger
     
     LOGGER.info("[!] If this script fails, your configuration file is corrupted. Run this again to validate the configuration again until it finishes.")
 
     defaultApi = CONFIG.pop("defaultApi", None)
-    logger = CONFIG.pop("mailLogger", None)
+    
     
     if defaultApi:
         assert isinstance(defaultApi, str), "'defaultApi' must be a string"
