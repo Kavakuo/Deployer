@@ -159,7 +159,8 @@ def main():
     
     # validate protection configuration
     protection = CONFIG.pop("protection", None)
-    validateProtection(protection)
+    if protection:
+        validateProtection(protection)
 
 
     # validate API Configurations
