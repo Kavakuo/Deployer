@@ -774,10 +774,10 @@ def requiresAuth(func):
                 if not isinstance(resp, Response):
                     resp = Response(resp)
                 
-                max_age = 31536000 if not CONTEXT.PROTECTION_COOKIE["maxAge"] else CONTEXT.PROTECTION_COOKIE["maxAge"]
+                max_age = 31536000 if not CONTEXT.PROTECTION_COOKIE.get("maxAge") else CONTEXT.PROTECTION_COOKIE["maxAge"]
                 httponly = True
-                path = "/" if not CONTEXT.PROTECTION_COOKIE["path"] else CONTEXT.PROTECTION_COOKIE["path"]
-                secure = False if not CONTEXT.PROTECTION_COOKIE["secureFlag"] else CONTEXT.PROTECTION_COOKIE["secureFlag"]
+                path = "/" if not CONTEXT.PROTECTION_COOKIE.get("path") else CONTEXT.PROTECTION_COOKIE["path"]
+                secure = False if not CONTEXT.PROTECTION_COOKIE.get("secureFlag") else CONTEXT.PROTECTION_COOKIE["secureFlag"]
 
                 resp.set_cookie(CONTEXT.PROTECTION_COOKIE["name"], CONTEXT.PROTECTION_COOKIE["value"], max_age=max_age, httponly=httponly, secure=secure, path=path)
                 
