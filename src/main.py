@@ -127,7 +127,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
         releaseOnly = True
 
     # disabled auto deployment (per file or config)
-    if stop or os.path.exists(deployInfo.repoPath + "disabled") or os.path.exists(deployInfo.repoPath + "disabled-" + deployInfo.branchName):
+    if stop or os.path.exists(os.path.join(deployInfo.repoPath, "disabled")) or os.path.exists(os.path.join(deployInfo.repoPath, "disabled-" + deployInfo.branchName)):
         if not force:
             if stop:
                 CONTEXT.addTestSeq(TEST_SEQs.dl_autoDeployConfigDisabled)
@@ -245,7 +245,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
         except:
             pass
 
-        args = ["git", "clone", "-b", deployInfo.pullBranch, settings.baseUrl + repoName + ".git", "."]
+        args = ["git", "clone", "-b", deployInfo.pullBranch, deployInfo.gitUrl, "."]
         gitOut, gitError = call(args, cwd=deployInfo.repoPath)
         output += addOutput("[+] " + " ".join(args), gitOut, gitError)
         error |= gitError
@@ -438,16 +438,16 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
     # scripts
     if firstSetup and not error:
         # launch setup script
-        if os.path.exists(deployInfo.repoPath + "setup"):
-            setupOut, setupErr = call([deployInfo.repoPath + "setup", deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
+        if os.path.exists(os.path.join(deployInfo.repoPath, "setup")):
+            setupOut, setupErr = call([os.path.join(deployInfo.repoPath, "setup"), deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
             output += addOutput("[+] Setup Script", setupOut, setupErr)
             error |= gitError
         else:
             output += "[!] No setup script found\n\n"
     elif not error:
         # launch reload script
-        if os.path.exists(deployInfo.repoPath + "reload"):
-            relOut, relErr = call([deployInfo.repoPath + "reload", deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
+        if os.path.exists(os.path.join(deployInfo.repoPath, "reload")):
+            relOut, relErr = call([os.path.join(deployInfo.repoPath, "reload"), deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
             output += addOutput("[+] Reload script", relOut, relErr)
             error |= relErr
         else:
@@ -774,10 +774,10 @@ def requiresAuth(func):
                 if not isinstance(resp, Response):
                     resp = Response(resp)
                 
-                max_age = 31536000 if not CONTEXT.PROTECTION_COOKIE["maxAge"] else CONTEXT.PROTECTION_COOKIE["maxAge"]
+                max_age = 31536000 if not CONTEXT.PROTECTION_COOKIE.get("maxAge") else CONTEXT.PROTECTION_COOKIE["maxAge"]
                 httponly = True
-                path = "/" if not CONTEXT.PROTECTION_COOKIE["path"] else CONTEXT.PROTECTION_COOKIE["path"]
-                secure = False if not CONTEXT.PROTECTION_COOKIE["secureFlag"] else CONTEXT.PROTECTION_COOKIE["secureFlag"]
+                path = "/" if not CONTEXT.PROTECTION_COOKIE.get("path") else CONTEXT.PROTECTION_COOKIE["path"]
+                secure = False if not CONTEXT.PROTECTION_COOKIE.get("secureFlag") else CONTEXT.PROTECTION_COOKIE["secureFlag"]
 
                 resp.set_cookie(CONTEXT.PROTECTION_COOKIE["name"], CONTEXT.PROTECTION_COOKIE["value"], max_age=max_age, httponly=httponly, secure=secure, path=path)
                 

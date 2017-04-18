@@ -16,8 +16,6 @@ class APISettings(object):
         self.rawApiSettings = CONTEXT.CONFIG.get(self.apiName) if CONTEXT.CONFIG.get(self.apiName) else dict()
         self.baseUrl = self.rawApiSettings.get("baseUrl")
         self.deployPath = self.rawApiSettings.get("deployPath")
-        if self.deployPath[-1] != "/":
-            self.deployPath += "/"
         
         # GitHub, repo API access (to get the latest release)
         self.accessToken = self.rawApiSettings.get("accessToken")
@@ -112,11 +110,11 @@ class Release(object):
 class DeployInfo(object):
     def __init__(self, settings, repoName, branchName):
         if branchName == "master":
-            self.repoPath = settings.deployPath + repoName + "/"
+            self.repoPath = os.path.join(settings.deployPath, repoName)
         else:
-            self.repoPath = settings.deployPath + repoName + "-" + branchName + "/"
+            self.repoPath = os.path.join(settings.deployPath, repoName + "-" + branchName)
         
-        self.gitUrl = settings.baseUrl + repoName + ".git"
+        self.gitUrl = os.path.join(settings.baseUrl, repoName + ".git")
         self.branchName = branchName
         self.pullBranch = self.branchName
         self.repoName = repoName
@@ -124,11 +122,9 @@ class DeployInfo(object):
         
         if branchName[0] == ".":
             self.pullBranch = "master"
-            self.repoPath = settings.deployPath + repoName + "-" + branchName[1:] + "/"
+            self.repoPath = os.path.join(settings.deployPath, repoName + "-" + branchName[1:])
         
         self.repoPath = os.path.realpath(self.repoPath)
-        if self.repoPath[-1] != "/":
-            self.repoPath += "/"
 
 
 class TEST_SEQs(object):
