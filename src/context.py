@@ -29,6 +29,7 @@ class _CustomFormatter(logger.logging.Formatter):
         record = copy(record)
         res = super().format(record)
         res = res.strip()
+        
         # shift linebreaks of the same log to the right
         res = res.replace("\n", "\n\t")
         return res

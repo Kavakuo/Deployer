@@ -127,7 +127,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
         releaseOnly = True
 
     # disabled auto deployment (per file or config)
-    if stop or os.path.exists(deployInfo.repoPath + "disabled") or os.path.exists(deployInfo.repoPath + "disabled-" + deployInfo.branchName):
+    if stop or os.path.exists(os.path.join(deployInfo.repoPath, "disabled")) or os.path.exists(os.path.join(deployInfo.repoPath, "disabled-" + deployInfo.branchName)):
         if not force:
             if stop:
                 CONTEXT.addTestSeq(TEST_SEQs.dl_autoDeployConfigDisabled)
@@ -245,7 +245,7 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
         except:
             pass
 
-        args = ["git", "clone", "-b", deployInfo.pullBranch, settings.baseUrl + repoName + ".git", "."]
+        args = ["git", "clone", "-b", deployInfo.pullBranch, deployInfo.gitUrl, "."]
         gitOut, gitError = call(args, cwd=deployInfo.repoPath)
         output += addOutput("[+] " + " ".join(args), gitOut, gitError)
         error |= gitError
@@ -438,16 +438,16 @@ def downloadFromGit(repoName, settings, branch="master", tag=None, webhook=False
     # scripts
     if firstSetup and not error:
         # launch setup script
-        if os.path.exists(deployInfo.repoPath + "setup"):
-            setupOut, setupErr = call([deployInfo.repoPath + "setup", deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
+        if os.path.exists(os.path.join(deployInfo.repoPath, "setup")):
+            setupOut, setupErr = call([os.path.join(deployInfo.repoPath, "setup"), deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
             output += addOutput("[+] Setup Script", setupOut, setupErr)
             error |= gitError
         else:
             output += "[!] No setup script found\n\n"
     elif not error:
         # launch reload script
-        if os.path.exists(deployInfo.repoPath + "reload"):
-            relOut, relErr = call([deployInfo.repoPath + "reload", deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
+        if os.path.exists(os.path.join(deployInfo.repoPath, "reload")):
+            relOut, relErr = call([os.path.join(deployInfo.repoPath, "reload"), deployInfo.branchName, request.headers["Host"]], cwd=deployInfo.repoPath)
             output += addOutput("[+] Reload script", relOut, relErr)
             error |= relErr
         else:
