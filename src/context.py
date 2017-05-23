@@ -52,6 +52,8 @@ class __Context(object):
         self.DEBUG = False
         self.TEST_SEQUENCE = set()
         self.LOGGER = logger.loggerWithName("Deployment")
+        self.MAIL_HANDLER = None
+        
         self.CONFIG = config.CONFIG
         self.PROJECT_FOLDER = projectFolder
         
@@ -88,7 +90,8 @@ class __Context(object):
         self.LOGGER.setLevel(logger.logging.DEBUG)
         
         if not self.DEBUG and "mailLogger" in self.CONFIG and not self.TESTING:
-            self.LOGGER.addHandler(logger.configureHandler(self.CONFIG["mailLogger"], logger.PNMailLogFormatter(), logLevel=logger.logging.CRITICAL))
+            self.MAIL_HANDLER = logger.configureHandler(self.CONFIG["mailLogger"], logger.PNMailLogFormatter(), logLevel=logger.logging.CRITICAL)
+            self.LOGGER.addHandler(self.MAIL_HANDLER)
 
 
     def _loadProtection(self):

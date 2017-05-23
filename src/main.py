@@ -601,6 +601,8 @@ def github():
     repoName = jsonData["repository"]["name"]
     release = Release(settings)
     event = headers["X-GitHub-Event"]
+    
+    mailHeader = ""
 
     if event == "push":
         if "refs/heads" not in jsonData["ref"]:
@@ -608,15 +610,18 @@ def github():
             return Response("No branch push detected, ignore push event", content_type=contenttype)
 
         branch = jsonData["ref"].replace("refs/heads/", "")
-        return logErrorRespToLevel(downloadFromGit(repoName, settings, branch=str(branch), release=release, webhook=True), LOGGER.critical)
+        mailHeader = "Push event successful!\n\n"
+        resp = logErrorRespToLevel(downloadFromGit(repoName, settings, branch=str(branch), release=release, webhook=True), LOGGER.critical)
 
     elif event == "release":
         tag = jsonData["release"]["tag_name"]
-        return logErrorRespToLevel(releaseEvent(repoName, tag, settings, release), LOGGER.critical)
+        mailHeader = "Release event successful!\n\n"
+        resp = logErrorRespToLevel(releaseEvent(repoName, tag, settings, release), LOGGER.critical)
 
     elif event == "create" and jsonData["ref_type"] == "tag":
         tag = jsonData["ref"]
-        return logErrorRespToLevel(createTagEvent(repoName, tag, settings, release), LOGGER.critical)
+        mailHeader = "Create event successful!\n\n"
+        resp = logErrorRespToLevel(createTagEvent(repoName, tag, settings, release), LOGGER.critical)
 
     elif event == "ping":
         events = jsonData["hook"]["events"]
@@ -640,15 +645,25 @@ def github():
             error = True
             
         if error:
+            LOGGER.critical("Error during github ping event...\n" + output)
             return requestError(output, code=400)
         else:
-            return Response("Everything looks good!", content_type=contenttype)
+            mailHeader = "Ping event successful!\n\n"
+            resp = Response("Everything looks good!", content_type=contenttype)
 
     else:
         LOGGER.critical("Received an unsupported GitHub Event: "  + headers["X-GitHub-Event"])
         return requestError("Received an unsupported GitHub Event", code=405)
     
-
+    if resp.status_code == 200 and CONTEXT.MAIL_HANDLER:
+        CONTEXT.MAIL_HANDLER.setLevel(logger.logging.INFO)
+        LOGGER.info(mailHeader + resp.get_data(as_text=True).strip())
+        CONTEXT.MAIL_HANDLER.setLevel(logger.logging.CRITICAL)
+        
+    return resp
+        
+        
+        
 @app.route('/gitlab', methods=["GET", "POST"])
 @reloadConfig
 def gitlab():
