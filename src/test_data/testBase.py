@@ -45,6 +45,7 @@ class DeployerTestCase(unittest.TestCase):
         # reload config_test file to undo testing manipulations
         reload(config_test)
         CONTEXT.CONFIG = config_test.CONFIG
+        CONTEXT._loadProtection()
         pass
     
     def tearDown(self):

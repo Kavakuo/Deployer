@@ -68,7 +68,7 @@ class __Context(object):
             print("Invalid config.py, check sample!")
             sys.exit(1)
 
-        if os.path.exists("/Users/Philipp/"):
+        if os.path.exists("/Users/philipp/"):
             self.DEBUG = True
             
         self._configureLogger()
@@ -130,6 +130,9 @@ class __Context(object):
                 self.LOGGER.info("Authentication for manual deployment only possible with username/password")
             elif self.PROTECTION_COOKIE and not self.PROTECTION:
                 self.LOGGER.info("Authentication for manual deployment only possible with cookie")
+        else:
+            self.PROTECTION = None
+            self.PROTECTION_COOKIE = None
         
     
     def _calcConfigHash(self):
