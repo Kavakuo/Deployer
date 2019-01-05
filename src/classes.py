@@ -25,6 +25,15 @@ class APISettings(object):
         
         # Gitlab special
         self.secret = self.rawApiSettings.get("secret")
+        
+        if self.baseUrl[:4] == "http" and self.accessToken:
+            self.baseUrl = self.baseUrl.replace('://www.', '://')
+            if apiName == "github":
+                self.baseUrl = self.baseUrl.replace("://", "://{token}@".format(token=self.accessToken))
+            if apiName == "gitlab":
+                self.baseUrl = self.baseUrl.replace("://", "://oauth2:{token}@".format(token=self.accessToken))
+            if apiName == "bitbucket":
+                self.baseUrl = self.baseUrl.replace("://", "://x-token-auth:{token}@".format(token=self.accessToken))
     
     def deployPossible(self):
         if not self.baseUrl or not self.deployPath:

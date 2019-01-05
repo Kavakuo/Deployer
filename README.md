@@ -129,8 +129,8 @@ Optional dictionary which configures the authentication for the manual deploymen
     * `deployPath: String`  
     Use this to specifiy the parent folder for the deployment. Repos are located at `[deployPath]/[REPO_NAME]-[BRANCH]`.
 
-    * `accessToken: String` (GitHub only)  
-    GitHub API Access Token. Is required for `release` webhooks (look at `REPO_NAME[releasesOnly]`).
+    * `accessToken: String` 
+    API Access Token. Is required for `release` webhooks for GitHub (look at `REPO_NAME[releasesOnly]`). Is used to patch the `gitBaseUrl` for authentication, if http protocol is used for `gitBaseUrl`.
 
     * `username: String` (GitHub only)  
     GitHub Username. Is required for `release` webhooks (look at `REPO_NAME[releasesOnly]`).    
