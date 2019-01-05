@@ -568,7 +568,7 @@ def github():
             "X-GitHub-Event": "push",
             "X-Hub-Signature": "sha1=c6498e16d2fa649cb8d92bea4c2a7f1dabfb7643"
         }
-        rawData = open("/Users/Philipp/Desktop/Scripts/Deployer/payload_github_push.json", "rb").read()
+        rawData = open("../payload_github_push.json", "rb").read()
         jsonData = json.loads(rawData.decode())
     else:
         rawData = request.get_data(as_text=False)
