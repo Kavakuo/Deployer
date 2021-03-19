@@ -6,7 +6,7 @@ Flask==1.0.2
 flipflop==1.0
 idna==2.8
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.1.0
 packaging==16.8
 pyparsing==2.2.0
